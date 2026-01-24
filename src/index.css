@@ -142,9 +142,9 @@
 
 @utility gradiant-border{
   @apply relative rounded-md;
-  background: linear-gradiant(to right, hsl(var(--card)))
+  background: linear-gradiant(to right, hsl(var(--card)),transparent);
   background-clip:padding-box;
-  border: 1px solid transparent
+  border: 1px solid transparent;
 }
 
 @utility cosmic-button{
@@ -159,7 +159,7 @@
 @utility meteor {
   @apply absolute rounded-full;
   background: linear-gradient(to right, white, transparent);
-  transform: rotate(45deg);
+  transform: rotate(215deg);
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
