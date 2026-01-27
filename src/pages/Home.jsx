@@ -1,36 +1,41 @@
-import { ThemeToggle } from "../components/ThemeToggle"
-import  {StarBackground } from "../components/StarBackground"
-import { Navbar } from "../components/Navbar"
-import { HeroSection } from "../components/HeroSection"
-import { AboutSection } from "../components/AboutSection"
-import { SkillsSection } from "../components/SkillsSection"
-import { ProjectsSection } from "../components/ProjectsSection"
-import { ContactSection } from "../components/ContactSection"
-import { Footer } from "../components/Footer"
+import { ThemeToggle } from '../components/ThemeToggle'
+import { StarBackground } from '../components/StarBackground'
+import { Navbar } from '../components/Navbar'
+import { HeroSection } from '../components/HeroSection'
+import { AboutSection } from '../components/AboutSection'
+import { SkillsSection } from '../components/SkillsSection'
+import { ProjectsSection } from '../components/ProjectsSection'
+import { ContactSection } from '../components/ContactSection'
+import { Footer } from '../components/Footer'
+import { SakuraBackground } from '../components/SakuraBackground'
 
 const Home = () => {
   return (
     <div className="bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
-      <ThemeToggle/>
+      <ThemeToggle />
 
       {/* Background effects */}
-      <StarBackground/>
+      {/* Light mode background */}
+        <SakuraBackground />
+
+      {/* Dark mode background */}
+        <StarBackground />
 
       {/* Navbar */}
-      <Navbar/>
-  
+      <Navbar />
+
       {/* Main Content */}
       <main>
-        <HeroSection/>
-        <AboutSection/>
-        <SkillsSection/>
-        <ProjectsSection/>
-        <ContactSection/>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
       </main>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -20,6 +20,9 @@
 
   --animate-meteor: meteor 5s linear infinite;
 
+  --animate-sakura: sakura-fall 10s linear infinite;
+
+
   @keyframes float {
     0%,
     100% {
@@ -64,6 +67,21 @@
       opacity: 0;
     }
   }
+
+  @keyframes sakura-fall {
+    0% {
+      transform: translateY(-60px) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(750px) translateX(120px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
 }
 
 @layer base {
@@ -105,6 +123,7 @@
   }
 }
 
+
 @utility container{
   margin-inline : auto;
   padding-inline : 2rem;
@@ -142,7 +161,7 @@
 
 @utility gradiant-border{
   @apply relative rounded-md;
-  background: linear-gradiant(to right, hsl(var(--card)),transparent);
+  background: linear-gradient(to right, hsl(var(--card)),transparent);
   background-clip:padding-box;
   border: 1px solid transparent;
 }
@@ -153,7 +172,7 @@
 
 @utility star{
   @apply absolute rounded-full bg-white;
-  box-shadow:0 0 10px 2px rgba(255, 255, 255 ,0.4)
+  box-shadow:0 0 10px 2px rgba(255, 255, 255 ,0.4);
 }
 
 @utility meteor {
@@ -162,6 +181,24 @@
   transform: rotate(215deg);
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
+
+@utility sakura {
+  @apply absolute pointer-events-none;
+  width: 12px;
+  height: 18px;
+
+  background: radial-gradient(
+    ellipse at top,
+    #fbcfe8 0%,
+    #f9a8d4 40%,
+    rgba(249, 168, 212, 0.8) 60%,
+    transparent 75%
+  ); 
+
+  border-radius: 70% 70% 100% 100%;
+  box-shadow: 0 0 10px rgba(249, 168, 212, 0.4);
+}
+
 
 
 #root{
