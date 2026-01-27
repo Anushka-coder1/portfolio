@@ -16,9 +16,6 @@ const Home = () => {
       <ThemeToggle />
 
       {/* Background effects */}
-      {/* Light mode background */}
-        <SakuraBackground />
-
       {/* Dark mode background */}
         <StarBackground />
 
