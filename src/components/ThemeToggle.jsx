@@ -8,25 +8,54 @@ export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
-    if (storedTheme === 'dark') {
+    let storedTheme = null
+    try {
+      storedTheme = localStorage.getItem('theme')
+    } catch {
+      storedTheme = null
+    }
+
+    const prefersDark =
+      typeof window !== 'undefined' &&
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    const shouldBeDark = storedTheme
+      ? storedTheme === 'dark'
+      : prefersDark
+
+    const root = document.documentElement
+    if (shouldBeDark) {
+      root.classList.add('dark')
       setIsDarkMode(true)
-      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
+      root.classList.remove('dark')
       setIsDarkMode(false)
+    }
+
+    try {
+      localStorage.setItem('theme', shouldBeDark ? 'dark' : 'light')
+    } catch {
+      // ignore storage failures (e.g., privacy mode)
     }
   }, [])
 
   const toggleTheme = () => {
     if (isDarkMode) {
       document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
+      try {
+        localStorage.setItem('theme', 'light')
+      } catch {
+        // ignore storage failures
+      }
       setIsDarkMode(false)
     } else {
       document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
+      try {
+        localStorage.setItem('theme', 'dark')
+      } catch {
+        // ignore storage failures
+      }
       setIsDarkMode(true)
     }
   }

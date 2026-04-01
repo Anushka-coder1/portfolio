@@ -39,8 +39,8 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> Anushka </span>{' '}
+          <span className="relative z-10 pl-5">
+            <span className="text-glow text-foreground "> Anushka </span>{' '}
             PortFolio
           </span>
         </a>
@@ -59,7 +59,7 @@ export const Navbar = () => {
 
         {/* mobile nav*/}
         <button onClick={()=>setIsMenuOpen((prev)=> !prev)}
-          className='md:hidden p-2 text-foreground z-50'
+          className='md:hidden fixed top-4 left-4 p-2 text-foreground z-50'
           aria-label={isMenuOpen ? "close Menu" : "open Menu"}
         > 
           {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
