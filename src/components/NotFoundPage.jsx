@@ -1,11 +1,9 @@
-
-
 function NotFoundPage() {
   return (
-    <section className="py-24 px-4 relative ">
-      <div className="container mx-auto max-w-5xl min-h-screen">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Page <span className="text-primary"> Not Found </span>
+    <section className="min-h-screen flex items-center justify-center px-4">
+      <div className="text-center">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Page <span className="text-primary">Not Found</span>
         </h2>
       </div>
     </section>
