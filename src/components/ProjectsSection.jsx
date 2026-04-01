@@ -7,8 +7,8 @@ const projects = [
     description: 'A responsive Myntra-inspired e-commerce website built using HTML and CSS, focusing on clean UI design, product listings, and a visually engaging shopping experience.',
     image: '/projectImage/myntra.png',
     tags: ['HTML', 'CSS'],
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: '/NotFound',
+    githubUrl:'https://github.com/Anushka-coder1/myntra-clone.git',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     image: '/projectImage/portfolio.png',
     tags: ['React', 'TailwindCSS',],
     demoUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/Anushka-coder1/portfolio.git',
   },
   {
     id: 3,
@@ -25,8 +25,8 @@ const projects = [
     description: 'A classic Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring interactive gameplay, real-time win detection, and a clean, user-friendly interface.',
     image: '/projectImage/Tic tac Toe.png',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/tic-tac-toe.git',
   },
   {
     id: 4,
@@ -34,8 +34,35 @@ const projects = [
     description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
     image: '/projectImage/rock paper scissors.png',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/rock-paper-scissor.git',
+  },
+  {
+    id: 5,
+    title: 'Mystery-Message',
+    description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
+    image: '/projectImage/under_construction.webp',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/mystryMessage.git',
+  },
+  {
+    id: 6,
+    title: 'chatBlizz',
+    description: 'A fun and responsive chat app using mern stack and socket.io',
+    image: '/projectImage/under_construction.webp',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
+  },
+  {
+    id: 7,
+    title: 'Email Spam Prediction',
+    description: 'A email spam prediction app',
+    image: '/projectImage/under_construction.webp',
+    tags: ['python'],
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
   },
 ]
 
@@ -49,9 +76,7 @@ export const ProjectsSection = () => {
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           {' '}
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
-          magni in corrupti incidunt earum aperiam unde, animi nisi id amet hic
-          aspernatur blanditiis, eaque possimus, impedit aut cum.{' '}
+          A collection of full-stack projects demonstrating my ability to design, develop, and integrate frontend interfaces with robust backend systems. These projects highlight my hands-on experience with APIs, databases, authentication, and scalable application architecture.{' '}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
