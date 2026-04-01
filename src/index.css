@@ -184,7 +184,7 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-//sakura effect
+/* sakura effect */
 @utility sakura {
   @apply absolute pointer-events-none;
   width: 12px;

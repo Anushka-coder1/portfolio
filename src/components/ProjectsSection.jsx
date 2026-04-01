@@ -1,70 +1,5 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react'
-
-const projects = [
-  {
-    id: 1,
-    title: 'Myntra Clone',
-    description: 'A responsive Myntra-inspired e-commerce website built using HTML and CSS, focusing on clean UI design, product listings, and a visually engaging shopping experience.',
-    image: '/projectImage/myntra.png',
-    tags: ['HTML', 'CSS'],
-    demoUrl: '/NotFound',
-    githubUrl:'https://github.com/Anushka-coder1/myntra-clone.git',
-  },
-  {
-    id: 2,
-    title: 'Portfolio',
-    description: 'A personal portfolio website built with React and Tailwind CSS, featuring smooth animations including stars and meteor effects to create an engaging and modern user experience.',
-    image: '/projectImage/portfolio.png',
-    tags: ['React', 'TailwindCSS',],
-    demoUrl: '#',
-    githubUrl: 'https://github.com/Anushka-coder1/portfolio.git',
-  },
-  {
-    id: 3,
-    title: 'Tic Tac Toe',
-    description: 'A classic Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring interactive gameplay, real-time win detection, and a clean, user-friendly interface.',
-    image: '/projectImage/Tic tac Toe.png',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/tic-tac-toe.git',
-  },
-  {
-    id: 4,
-    title: 'Rock Paper Scissors',
-    description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
-    image: '/projectImage/rock paper scissors.png',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/rock-paper-scissor.git',
-  },
-  {
-    id: 5,
-    title: 'Mystery-Message',
-    description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
-    image: '/projectImage/under_construction.webp',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/mystryMessage.git',
-  },
-  {
-    id: 6,
-    title: 'chatBlizz',
-    description: 'A fun and responsive chat app using mern stack and socket.io',
-    image: '/projectImage/under_construction.webp',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
-  },
-  {
-    id: 7,
-    title: 'Email Spam Prediction',
-    description: 'A email spam prediction app',
-    image: '/projectImage/under_construction.webp',
-    tags: ['python'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
-  },
-]
+import { projects } from '../data/projects'
 
 export const ProjectsSection = () => {
   return (
@@ -76,7 +11,10 @@ export const ProjectsSection = () => {
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           {' '}
-          A collection of full-stack projects demonstrating my ability to design, develop, and integrate frontend interfaces with robust backend systems. These projects highlight my hands-on experience with APIs, databases, authentication, and scalable application architecture.{' '}
+          A collection of full-stack projects demonstrating my ability to
+          design, develop, and integrate frontend interfaces with robust backend
+          systems. These projects highlight my hands-on experience with APIs,
+          databases, authentication, and scalable application architecture.{' '}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
@@ -85,11 +23,17 @@ export const ProjectsSection = () => {
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </a>
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -126,9 +70,13 @@ export const ProjectsSection = () => {
             </div>
           ))}
         </div>
-        <div className='text-center mt-12'>
-          <a className='cosmic-button w-fit flex items-center mx-auto gap-2' target='_blank' href="https://github.com/Anushka-coder1">
-            Check My Github <ArrowRight/>
+        <div className="text-center mt-12">
+          <a
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            target="_blank"
+            href="https://github.com/Anushka-coder1"
+          >
+            Check My Github <ArrowRight />
           </a>
         </div>
       </div>

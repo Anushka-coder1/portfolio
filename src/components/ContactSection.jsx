@@ -10,6 +10,7 @@ import {
 import cn from '../lib/utils'
 import { toast } from "sonner"
 import { useState } from 'react'
+// import sendEmail from '../services/email'
 
 export const ContactSection = () => {
   const [isSubmitting,SetIsSubmitted] = useState(false)
@@ -162,6 +163,7 @@ export const ContactSection = () => {
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
                 {/* ///use emailjs API */}
+                {/* ${sendEmail(Email,)} */}
                 <SendIcon size={16} />
               </button>
             </form>
