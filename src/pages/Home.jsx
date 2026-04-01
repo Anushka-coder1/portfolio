@@ -13,10 +13,6 @@ const Home = () => {
       {/* Theme Toggle */}
       <ThemeToggle />
 
-      {/* Background effects */}
-      {/* Dark mode background */}
-        <StarBackground />
-
       {/* Navbar */}
       <Navbar />
 

@@ -14,7 +14,7 @@ export const SakuraBackground = () => {
   })
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-[5] dark:hidden">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-5 dark:hidden">
       {petals.map((petal) => (
         <div
           key={petal.id}

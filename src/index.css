@@ -219,9 +219,9 @@
   height: 18px;
   background: radial-gradient(
     ellipse at top,
-    #fbcfe8 0%,
-    #f9a8d4 40%,
-    rgba(249, 168, 212, 0.8) 60%,
+    #efaed3 0%,
+    #e78fbf 40%,
+    rgba(225, 118, 177, 0.8) 60%,
     transparent 75%
   );
   border-radius: 70% 70% 100% 100%;
