@@ -13,12 +13,17 @@ const skills = [
   { name: 'MongoDB', level: 75, category: 'backend' },
   { name: 'MySQL', level: 70, category: 'backend' },
 
+  //AI/ML
+  { name: 'python', level: 70, category: 'AI/ML' },
+  { name: 'Panda', level: 40, category: 'AI/ML' },
+  { name: 'Numpy', level: 50, category: 'AI/ML' },
+
   //Tools
   { name: 'Git/GitHub', level: 60, category: 'tools' },
   { name: 'Postman', level: 70, category: 'tools' },
   { name: 'VS Code', level: 95, category: 'tools' },
 ]
 
-const categories = ['all', 'frontend', 'backend', 'tools']
+const categories = ['all', 'frontend', 'backend','AI/ML', 'tools']
 
 export {skills , categories}

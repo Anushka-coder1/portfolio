@@ -76,15 +76,6 @@ const GamesSection = () => {
                 </div>
               ))}
           </div>
-          <div className="text-center mt-12">
-            <a
-              className="cosmic-button w-fit flex items-center mx-auto gap-2"
-              target="_blank"
-              href="https://github.com/Anushka-coder1"
-            >
-              Check My Github <ArrowRight />
-            </a>
-          </div>
         </div>
       </section>
     </div>
