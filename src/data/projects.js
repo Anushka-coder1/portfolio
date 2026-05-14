@@ -1,6 +1,9 @@
+// fields - games , main-project , mini-project , mini-ai-project,
 export const projects = [
   {
+    id:1,
     title: 'Portfolio',
+    field : 'mini-project',
     description: 'A personal portfolio website built with React and Tailwind CSS, featuring smooth animations including stars and meteor effects to create an engaging and modern user experience.',
     image: '/projectImage/portfolio.png',
     tags: ['React', 'TailwindCSS',],
@@ -8,7 +11,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/portfolio.git',
   },
   {
+    id:2,
     title: 'Tic Tac Toe',
+    field : 'games',
     description: 'A classic Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring interactive gameplay, real-time win detection, and a clean, user-friendly interface.',
     image: '/projectImage/Tic tac Toe.png',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -16,7 +21,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/tic-tac-toe.git',
   },
   {
+    id:3,
     title: 'Rock Paper Scissors',
+    field : 'games',
     description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
     image: '/projectImage/rock paper scissors.png',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -24,8 +31,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/rock-paper-scissor.git',
   },
   {
-    id: 5,
+    id:4,
     title: 'Mystery-Message',
+    field : 'mini-project',
     description: 'A fun and responsive Rock Paper Scissors game using vanilla JavaScript, showcasing conditional logic, event handling, and smooth UI interactions.',
     image: '/projectImage/under_construction.webp',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -33,8 +41,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/mystryMessage.git',
   },
   {
-    id: 6,
+    id:5,
     title: 'ChatBlizz',
+    field : 'mini-project',
     description: 'A fun and responsive chat app using mern stack and socket.io',
     image: '/projectImage/under_construction.webp',
     tags: ['HTML', 'CSS', 'JavaScript' , 'tailwindcss' , 'socket.io'],
@@ -42,8 +51,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
   },
   {
-    id: 7,
+    id:6,
     title: 'Email Spam Prediction',
+    field : 'mini-ml-project',
     description: 'This project is a Python-based Email Spam Detector that classifies messages as Spam or Ham using a simple machine‑learning pipeline. It trains a model from a labeled dataset, saves the trained model, and lets you test predictions either from the command line or through a small Flask web app with a text box.',
     image: '/projectImage/email-spam.png',
     tags: ['python','flask', 'pandas','scikit-learn','joblib'],
@@ -51,8 +61,9 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
   },
   {
-    id: 8,
+    id:7,
     title: 'Ecommerse site',
+    field : 'mini-project',
     description: '',
     image: '/projectImage/under_construction.webp',
     tags: ['python','flask', 'pandas','scikit-learn','joblib'],
@@ -60,12 +71,24 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/Pump-Shopping-Site.git',
   },
   {
-    id: 1,
+    id:8,
     title: 'Myntra Clone',
+    field : 'mini-project',
     description: 'A responsive Myntra-inspired e-commerce website built using HTML and CSS, focusing on clean UI design, product listings, and a visually engaging shopping experience.',
     image: '/projectImage/myntra.png',
     tags: ['HTML', 'CSS'],
     demoUrl: 'https://myntra-clone-orcin-two.vercel.app/',
     githubUrl:'https://github.com/Anushka-coder1/myntra-clone.git',
   },
+  {
+    id:9,
+    title: 'Guess 4 digit',
+    field : 'games',
+    description: 'Developed a responsive 4-digit guessing game using React and Tailwind CSS with features like random number generation, guess validation, score tracking, and interactive UI feedback.',
+    image: '/projectImage/guess 4 digit.png',
+    tags: ['React' , 'tailwind'],
+    demoUrl: 'https://guess-num-xi.vercel.app/',
+    githubUrl:'https://github.com/Anushka-coder1/guess-num.git',
+  },
 ]
+
