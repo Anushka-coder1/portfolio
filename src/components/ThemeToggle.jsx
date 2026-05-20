@@ -1,82 +1,85 @@
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import cn from '../lib/utils'
-import { StarBackground } from '../components/StarBackground'
+import { StarBackground } from './StarBackground'
 import { SakuraBackground } from './SakuraBackground'
 
+const getInitialTheme = () => {
+  if (typeof document === 'undefined') {
+    return false
+  }
+
+  return document.documentElement.classList.contains('dark')
+}
+
 export const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(getInitialTheme)
 
   useEffect(() => {
-    let storedTheme = null
-    try {
-      storedTheme = localStorage.getItem('theme')
-    } catch {
-      storedTheme = null
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const syncTheme = (nextDarkMode) => {
+      document.documentElement.classList.toggle('dark', nextDarkMode)
+      setIsDarkMode(nextDarkMode)
+
+      try {
+        localStorage.setItem('theme', nextDarkMode ? 'dark' : 'light')
+      } catch {
+        // ignore storage failures
+      }
     }
 
-    const prefersDark =
-      typeof window !== 'undefined' &&
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
+    const handleSystemTheme = (event) => {
+      let storedTheme = null
 
-    const shouldBeDark = storedTheme
-      ? storedTheme === 'dark'
-      : prefersDark
+      try {
+        storedTheme = localStorage.getItem('theme')
+      } catch {
+        storedTheme = null
+      }
 
-    const root = document.documentElement
-    if (shouldBeDark) {
-      root.classList.add('dark')
-      setIsDarkMode(true)
-    } else {
-      root.classList.remove('dark')
-      setIsDarkMode(false)
+      if (!storedTheme) {
+        syncTheme(event.matches)
+      }
     }
 
-    try {
-      localStorage.setItem('theme', shouldBeDark ? 'dark' : 'light')
-    } catch {
-      // ignore storage failures (e.g., privacy mode)
+    setIsDarkMode(getInitialTheme())
+    mediaQuery.addEventListener('change', handleSystemTheme)
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleSystemTheme)
     }
   }, [])
 
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove('dark')
-      try {
-        localStorage.setItem('theme', 'light')
-      } catch {
-        // ignore storage failures
-      }
-      setIsDarkMode(false)
-    } else {
-      document.documentElement.classList.add('dark')
-      try {
-        localStorage.setItem('theme', 'dark')
-      } catch {
-        // ignore storage failures
-      }
-      setIsDarkMode(true)
+    const nextDarkMode = !isDarkMode
+
+    document.documentElement.classList.toggle('dark', nextDarkMode)
+    setIsDarkMode(nextDarkMode)
+
+    try {
+      localStorage.setItem('theme', nextDarkMode ? 'dark' : 'light')
+    } catch {
+      // ignore storage failures
     }
   }
 
   return (
     <>
-      {/* Background */}
       {isDarkMode ? <StarBackground /> : <SakuraBackground />}
 
-      {/* Toggle Button */}
       <button
         onClick={toggleTheme}
         className={cn(
-          'fixed top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300',
-          'focus:outline-none',
+          'fixed top-5 right-5 z-50 rounded-full border border-border/70 bg-background/80 p-3 text-foreground shadow-lg backdrop-blur-md transition-all duration-300 hover:scale-105 hover:bg-background',
+          'focus:outline-hidden focus:ring-2 focus:ring-primary/70',
         )}
+        aria-label={isDarkMode ? 'Switch to day mode' : 'Switch to night mode'}
       >
         {isDarkMode ? (
-          <Sun className="h-6 w-6 text-white" />
+          <Sun className="h-5 w-5 text-amber-300" />
         ) : (
-          <Moon className="h-6 w-6 text-blue-900" />
+          <Moon className="h-5 w-5 text-sky-900" />
         )}
       </button>
     </>

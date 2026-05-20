@@ -1,18 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
-import { Toaster } from "sonner";
+import { Toaster } from 'sonner'
 import { ThemeToggle } from './components/ThemeToggle'
 
 function App() {
   return (
     <>
-      <Toaster />
+      <Toaster richColors closeButton />
       <ThemeToggle />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
           <Route path="/NotFound" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
