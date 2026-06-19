@@ -8,7 +8,7 @@ export const projects = [
       'A personal portfolio built with React and Tailwind CSS, featuring polished day and night motion effects for a more immersive browsing experience.',
     image: '/projectImage/portfolio.png',
     tags: ['React', 'Tailwind CSS'],
-    demoUrl: '/',
+    demoUrl: 'https://portfolio-black-zeta-11.vercel.app/',
     githubUrl: 'https://github.com/Anushka-coder1/portfolio.git',
   },
   {
