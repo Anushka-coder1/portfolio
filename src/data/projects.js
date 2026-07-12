@@ -20,6 +20,28 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/AI-Resume-analyser.git',
   },
   {
+    id: 5,
+    title: 'ChatBlizz',
+    field: 'mini-project',
+    description:
+      'A chat application built with the MERN stack and Socket.IO for real-time conversations.',
+    image: '/projectImage/under_construction.webp',
+    tags: ['React', 'Tailwind CSS', 'Socket.IO', 'MongoDB'],
+    demoUrl: '/NotFound',
+    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
+  },
+  {
+    id: 6,
+    title: 'Email Spam Prediction',
+    field: 'mini-ml-project',
+    description:
+      'A Python-based spam detector that trains a simple machine-learning model and serves predictions through a small web interface.',
+    image: '/projectImage/email-spam.png',
+    tags: ['Python', 'Flask', 'Pandas', 'scikit-learn', 'joblib'],
+    demoUrl: 'https://email-spam-umber.vercel.app/',
+    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
+  },
+  {
     id: 2,
     title: 'Tic Tac Toe',
     field: 'games',
@@ -52,28 +74,8 @@ export const projects = [
     demoUrl: '/NotFound',
     githubUrl: 'https://github.com/Anushka-coder1/mystryMessage.git',
   },
-  {
-    id: 5,
-    title: 'ChatBlizz',
-    field: 'mini-project',
-    description:
-      'A chat application built with the MERN stack and Socket.IO for real-time conversations.',
-    image: '/projectImage/under_construction.webp',
-    tags: ['React', 'Tailwind CSS', 'Socket.IO', 'MongoDB'],
-    demoUrl: '/NotFound',
-    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
-  },
-  {
-    id: 6,
-    title: 'Email Spam Prediction',
-    field: 'mini-ml-project',
-    description:
-      'A Python-based spam detector that trains a simple machine-learning model and serves predictions through a small web interface.',
-    image: '/projectImage/email-spam.png',
-    tags: ['Python', 'Flask', 'Pandas', 'scikit-learn', 'joblib'],
-    demoUrl: 'https://email-spam-umber.vercel.app/',
-    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
-  },
+  
+  
   {
     id: 7,
     title: 'Ecommerce Site',
