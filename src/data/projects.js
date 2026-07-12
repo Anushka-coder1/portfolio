@@ -2,14 +2,22 @@
 export const projects = [
   {
     id: 1,
-    title: 'Portfolio',
+    title: 'AI Resume Analyser',
     field: 'mini-project',
     description:
-      'A personal portfolio built with React and Tailwind CSS, featuring polished day and night motion effects for a more immersive browsing experience.',
+      'An AI-powered resume analysis platform that evaluates resumes against job descriptions, generates ATS-friendly resumes, creates personalized interview reports, identifies skill gaps, and provides a structured preparation roadmap. Built with React, Node.js, Express, MongoDB, JWT authentication, Gemini AI, and Puppeteer for automated PDF generation.',
     image: '/projectImage/portfolio.png',
-    tags: ['React', 'Tailwind CSS'],
-    demoUrl: 'https://portfolio-black-zeta-11.vercel.app/',
-    githubUrl: 'https://github.com/Anushka-coder1/portfolio.git',
+    tags: [
+      'React',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Gemini AI',
+      'JWT',
+      'Puppeteer'
+    ],
+    demoUrl: 'https://ai-resume-analyser-ten-zeta.vercel.app',
+    githubUrl: 'https://github.com/Anushka-coder1/AI-Resume-analyser.git',
   },
   {
     id: 2,
