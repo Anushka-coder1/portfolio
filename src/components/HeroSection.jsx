@@ -36,6 +36,12 @@ export const HeroSection = () => {
             >
               Let&apos;s Talk
             </a>
+            <a
+              href="https://drive.google.com/file/d/1Nx0iC_Mh5HpRbKT9Qj_j4_I1T2r7lVIl/view?usp=sharing"
+              className="rounded-full border border-primary/40 px-6 py-2 font-medium text-primary transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/10"
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>
