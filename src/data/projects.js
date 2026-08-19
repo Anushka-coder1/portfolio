@@ -28,7 +28,7 @@ export const projects = [
       'A full-stack real-time messaging application built with the MERN stack and Socket.IO. Features secure JWT authentication, one-to-one and group chats, online/offline presence, and seamless image and file sharing through a responsive user interface.',
     image: '/projectImage/under_construction.webp',
     tags: ['React', 'Node.js', 'Socket.IO', 'MongoDB', 'JWT'],
-    demoUrl: '/NotFound',
+    demoUrl: 'https://chatblitz.onrender.com/',
     githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
   },
 
