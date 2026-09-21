@@ -3,7 +3,7 @@ export const projects = [
   {
     id: 1,
     title: 'AI Resume Analyser',
-    field: 'mini-project',
+    field: 'main-project',
     description:
       'An AI-powered career assistant that analyzes resumes against job descriptions, generates ATS-optimized resumes, creates personalized interview reports, identifies skill gaps, and provides structured preparation plans. Built with the MERN stack, Gemini AI, JWT authentication, and Puppeteer for automated PDF generation.',
     image: '/projectImage/portfolio.png',
@@ -21,9 +21,9 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 2,
     title: 'ChatBlizz',
-    field: 'mini-project',
+    field: 'main-project',
     description:
       'A full-stack real-time messaging application built with the MERN stack and Socket.IO. Features secure JWT authentication, one-to-one and group chats, online/offline presence, and seamless image and file sharing through a responsive user interface.',
     image: '/projectImage/under_construction.webp',
@@ -32,8 +32,21 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
   },
 
+ {
+    id: 3,
+    title: 'Book Recommendation System',
+    field: 'main-project',
+    description:
+      'A book recommendation system built with Python and Streamlit. It uses collaborative filtering to suggest books based on user ratings and preferences. The application features a user-friendly interface for exploring book recommendations and is designed to enhance the reading experience by providing personalized suggestions.',
+    image: '/projectImage/under_construction.webp',
+    tags: ["Python", "Streamlit", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Pytest"],
+    demoUrl: 'https://recommendbook-ynqsr8famvthqggvb3shbr.streamlit.app/',
+    githubUrl: 'https://github.com/Anushka-coder1/reccomend_book.git',
+  },
+
+
   {
-    id: 6,
+    id: 4,
     title: 'Email Spam Prediction',
     field: 'mini-ml-project',
     description:
@@ -45,7 +58,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 5,
     title: 'Tic Tac Toe',
     field: 'games',
     description:
@@ -57,7 +70,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 6,
     title: 'Rock Paper Scissors',
     field: 'games',
     description:
@@ -69,7 +82,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 7,
     title: 'Mystery Message',
     field: 'mini-project',
     description:
@@ -81,7 +94,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: 'Ecommerce Site',
     field: 'mini-project',
     description:
@@ -93,7 +106,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: 'Myntra Clone',
     field: 'mini-project',
     description:
@@ -105,7 +118,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: 'Guess 4 Digit',
     field: 'games',
     description:
