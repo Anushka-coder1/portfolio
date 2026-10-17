@@ -10,7 +10,7 @@ export const HeroSection = () => {
       <div className="container z-10 mx-auto max-w-4xl text-center">
         <div className="space-y-6">
           <p className="opacity-0 text-sm uppercase tracking-[0.35em] text-primary animate-fade-in">
-            Full Stack Developer
+            Aspiring Data Scientist
           </p>
           <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
             <span className="animate-fade-in">Hi, I&apos;m</span>
@@ -22,9 +22,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground opacity-0 animate-fade-in-delay-3 md:text-xl">
-            I&apos;m a full-stack developer who loves building polished, responsive
-            web experiences with expressive animation, clean UI, and dependable
-            backend integrations.
+            I&apos;m a data science enthusiast who turns raw data into meaningful insights through analysis, machine learning, and compelling visualizations. I enjoy building practical, data-driven solutions that are clear, reliable, and impactful.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 pt-4 opacity-0 animate-fade-in-delay-4 sm:flex-row">
             <a href="#project" className="cosmic-button">

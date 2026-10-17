@@ -10,8 +10,7 @@ export const ProjectsSection = () => {
           Featured <span className="text-primary">Projects</span>
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-          A collection of projects that highlight my work across frontend
-          experiences, backend integration, and creative interfaces.
+          A collection of data science projects highlighting my work in data analysis, machine learning, visualization, and insight-driven solutions.
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects

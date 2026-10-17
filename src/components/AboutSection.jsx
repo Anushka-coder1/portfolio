@@ -10,19 +10,19 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div className="space-y-6 text-left">
             <span className="inline-flex rounded-full border border-primary/25 bg-primary/8 px-4 py-1 text-sm font-medium text-primary">
-              Passionate developer and visual builder
+              Data Science & Machine Learning Enthusiast
             </span>
             <h3 className="text-3xl font-semibold leading-tight">
-              I design and build websites that feel alive, fast, and easy to use.
+              I turn data into insights that inform smarter decisions.
             </h3>
             <p className="text-muted-foreground">
-              I specialize in creating responsive, accessible, and performant web
-              applications using modern frontend and backend tools.
+              I use Python, SQL, statistics, and machine learning to explore
+              complex datasets, uncover patterns, and build practical solutions.
             </p>
             <p className="text-muted-foreground">
-              I enjoy turning complex ideas into elegant interfaces, and I&apos;m
-              always learning new technologies to keep improving the quality of
-              what I ship.
+              I enjoy communicating findings through clear visualizations and
+              reproducible analysis, and I&apos;m always learning new techniques to
+              make my work more accurate and impactful.
             </p>
 
             <div className="flex flex-col gap-4 pt-4 sm:flex-row">
@@ -45,10 +45,9 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">Web Development</h4>
+                  <h4 className="text-lg font-semibold">Data Analysis</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with modern
-                    frameworks.
+                    Transforming raw data into meaningful insights through cleaning, exploration, SQL queries, and statistical analysis.
                   </p>
                 </div>
               </div>
@@ -60,10 +59,9 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">UI/UX Design</h4>
+                  <h4 className="text-lg font-semibold">Machine Learning</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and smooth product
-                    journeys with attention to detail.
+                    Building predictive models using classification, regression, clustering, and practical evaluation techniques.
                   </p>
                 </div>
               </div>
@@ -75,10 +73,9 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">Project Ownership</h4>
+                  <h4 className="text-lg font-semibold">Data Visualization</h4>
                   <p className="text-muted-foreground">
-                    Taking ideas from concept to launch with practical planning,
-                    iteration, and clean delivery.
+                    Communicating findings through clear dashboards, interactive charts, and compelling data stories.
                   </p>
                 </div>
               </div>
