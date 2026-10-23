@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import cn from '../lib/utils'
-import { categories, skills } from '../data/skills'
+import cn from '../../lib/utils'
+import { categories, skills } from '../../data/skills'
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState('all')

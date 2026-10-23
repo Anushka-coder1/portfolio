@@ -1,6 +1,6 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react'
 
-export const renderProjectCard = (project) => {
+export const ProjectCard = (project) => {
   const hasDemo = project.demoUrl && project.demoUrl !== '/NotFound'
   const isExternalDemo = hasDemo && project.demoUrl.startsWith('http')
 

@@ -1,7 +1,6 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react'
-import { projects } from '../data/projects'
-import { renderProjectCard } from './renderProjectCard'
-
+import { projects } from '../../data/projects'
+import { ProjectCard } from '../projects/ProjectCard'
 
 const GamesSection = () => {
   return (
@@ -17,7 +16,7 @@ const GamesSection = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects
             .filter((project) => project.field == 'games')
-            .map((project) => renderProjectCard(project))}
+            .map((project) => ProjectCard(project))}
         </div>
         
       </div>

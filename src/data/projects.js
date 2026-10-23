@@ -21,18 +21,18 @@ export const projects = [
   },
 
   {
-    id: 2,
-    title: 'ChatBlizz',
-    field: 'main-project',
+    id: 4,
+    title: 'Email Spam Prediction',
+    field: 'mini-ml-project',
     description:
-      'A full-stack real-time messaging application built with the MERN stack and Socket.IO. Features secure JWT authentication, one-to-one and group chats, online/offline presence, and seamless image and file sharing through a responsive user interface.',
-    image: '/projectImage/under_construction.webp',
-    tags: ['React', 'Node.js', 'Socket.IO', 'MongoDB', 'JWT'],
-    demoUrl: 'https://chatblitz.onrender.com/',
-    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
+      'A machine learning application that classifies emails as spam or ham using TF-IDF vectorization and a Linear SVM classifier. The model was trained from scratch using Python and deployed with a lightweight web interface for real-time predictions.',
+    image: '/projectImage/email-spam.png',
+    tags: ['Python', 'Flask', 'TF-IDF', 'Linear SVM', 'scikit-learn'],
+    demoUrl: 'https://email-spam-umber.vercel.app/',
+    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
   },
 
- {
+  {
     id: 3,
     title: 'Book Recommendation System',
     field: 'main-project',
@@ -44,17 +44,16 @@ export const projects = [
     githubUrl: 'https://github.com/Anushka-coder1/reccomend_book.git',
   },
 
-
   {
-    id: 4,
-    title: 'Email Spam Prediction',
-    field: 'mini-ml-project',
+    id: 2,
+    title: 'ChatBlizz',
+    field: 'main-project',
     description:
-      'A machine learning application that classifies emails as spam or ham using TF-IDF vectorization and a Linear SVM classifier. The model was trained from scratch using Python and deployed with a lightweight web interface for real-time predictions.',
-    image: '/projectImage/email-spam.png',
-    tags: ['Python', 'Flask', 'TF-IDF', 'Linear SVM', 'scikit-learn'],
-    demoUrl: 'https://email-spam-umber.vercel.app/',
-    githubUrl: 'https://github.com/Anushka-coder1/email-spam.git',
+      'A full-stack real-time messaging application built with the MERN stack and Socket.IO. Features secure JWT authentication, one-to-one and group chats, online/offline presence, and seamless image and file sharing through a responsive user interface.',
+    image: '/projectImage/under_construction.webp',
+    tags: ['React', 'Node.js', 'Socket.IO', 'MongoDB', 'JWT'],
+    demoUrl: 'https://chatblitz.onrender.com/',
+    githubUrl: 'https://github.com/Anushka-coder1/ChatBlitz.git',
   },
 
   {

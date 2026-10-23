@@ -1,6 +1,7 @@
-import { ArrowRight, ExternalLink, Github } from 'lucide-react'
-import { projects } from '../data/projects'
-import { renderProjectCard } from './renderProjectCard'
+import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { projects } from '../../data/projects'
+import { ProjectCard }  from '../projects/ProjectCard.jsx'
 
 export const ProjectsSection = () => {
   return (
@@ -15,17 +16,16 @@ export const ProjectsSection = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects
             .filter((project) => project.field !== 'games')
-            .map((project) => renderProjectCard(project))}
+            .slice(0, 3)
+            .map((project) => ProjectCard(project))}
         </div>
         <div className="mt-12 text-center">
-          <a
+          <Link
             className="cosmic-button mx-auto flex w-fit items-center gap-2"
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Anushka-coder1"
+            to="/projects"
           >
-            Check My GitHub <ArrowRight />
-          </a>
+            View All Projects <ArrowRight />
+          </Link>
         </div>
       </div>
     </section>

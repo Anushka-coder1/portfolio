@@ -1,8 +1,8 @@
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import cn from '../lib/utils'
-import { StarBackground } from './StarBackground'
-import { SakuraBackground } from './SakuraBackground'
+import cn from '../../lib/utils'
+import { StarBackground } from './../backgrounds/StarBackground'
+import { SakuraBackground } from './../backgrounds/SakuraBackground'
 
 const getInitialTheme = () => {
   if (typeof document === 'undefined') {

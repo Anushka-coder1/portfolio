@@ -1,11 +1,11 @@
-import { Navbar } from '../components/Navbar'
-import { HeroSection } from '../components/HeroSection'
-import { AboutSection } from '../components/AboutSection'
-import { SkillsSection } from '../components/SkillsSection'
-import { ProjectsSection } from '../components/ProjectsSection'
-import { ContactSection } from '../components/ContactSection'
-import { Footer } from '../components/Footer'
-import GamesSection from '../components/GamesSection'
+import { Navbar } from '../components/layout/Navbar'
+import { HeroSection } from '../components/sections/HeroSection'
+import { AboutSection } from '../components/sections/AboutSection'
+import { SkillsSection } from '../components/sections/SkillsSection'
+import { ProjectsSection } from '../components/sections/ProjectsSection'
+import { ContactSection } from '../components/sections/ContactSection'
+import { Footer } from '../components/layout/Footer'
+import GamesSection from '../components/sections/GamesSection'
 
 const Home = () => {
   return (

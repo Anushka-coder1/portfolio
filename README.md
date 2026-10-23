@@ -1,97 +1,88 @@
-1. Number Guessing Game
-Random number generation
-State management
-Input handling
-Conditional rendering
-2. Tic Tac Toe
-Arrays and game logic
-Turn-based state updates
-Winner detection
-3. Rock Paper Scissors
-Basic game logic
-Score tracking
-Animations
-4. Memory Card Game
-Array shuffling
-Timers
-Matching logic
-5. Snake Game
-Keyboard events
-Game loops
-Collision detection
-6. Whack-a-Mole
-Timers and intervals
-Dynamic rendering
-Score system
-7. Simon Says
-Sequence memory
-Audio effects
-State patterns
-Intermediate Level (React + Backend)
+# Data Science Portfolio
 
-These help you learn Node.js, Express, MongoDB.
+A responsive personal portfolio for presenting data science, machine learning,
+data-analysis, and visualization projects. It includes project filtering, a
+skills overview, dark-mode styling, and a contact form backed by a Vercel
+serverless function.
 
-8. Multiplayer Tic Tac Toe
-Store matches in MongoDB
-User authentication
-Match history
-9. Quiz Battle App
-Questions from database
-Leaderboards
-Timer-based gameplay
-10. Word Guessing Game
-API integration
-Difficulty levels
-User score storage
-11. Chess Timer App
-Advanced state handling
-Persistent game stats
-12. Hangman Game
-Backend word database
-Authentication
-Categories
-Advanced MERN + Real-Time Features
+## Tech stack
 
-Perfect for learning production-level concepts.
+- React 19
+- Vite
+- Tailwind CSS 4
+- React Router
+- Lucide React icons
+- Nodemailer (contact-form email delivery)
+- Vercel (deployment and serverless API)
 
-13. Real-Time Multiplayer Snake
-WebSockets / Socket.IO
-Real-time synchronization
-Multiplayer rooms
-14. Online Chess Game
-Complex game state
-Matchmaking
-Real-time moves
-15. Multiplayer UNO Clone
-Authentication
-Game rooms
-Real-time events
-Turn synchronization
-16. Battle Royale Quiz App
-Live leaderboard
-Real-time competition
-Timed rounds
-17. 2D Browser Shooter
-Canvas API
-Physics
-Socket.IO multiplayer
-Best Projects for Portfolio
+## Run locally
 
-These stand out most:
+**Prerequisite:** Node.js 20.19+ or 22.12+ is recommended for Vite 7.
 
-Multiplayer Tic Tac Toe
-Real-Time Quiz App
-Multiplayer Snake
-Chess Game
-UNO Clone
-Memory Game with leaderboard
-Skills You’ll Learn Through Games
-Game Feature	Skill
-Score tracking	React state
-Login system	Authentication
-Leaderboards	MongoDB queries
-Multiplayer	Socket.IO
-Save progress	REST APIs
-Timers	useEffect
-Animations	Tailwind + Framer Motion
-Real-time gameplay	WebSockets
+```bash
+npm install
+npm run dev
+```
+
+Open the local address printed by Vite (normally `http://localhost:5173`).
+
+## Available commands
+
+```bash
+npm run dev      # Start the development server
+npm run build    # Create a production build in dist/
+npm run preview  # Preview the production build locally
+npm run lint     # Run ESLint
+```
+
+## Customize the portfolio
+
+- Update personal details and the introduction in `src/components/`.
+- Add, remove, or edit project cards in `src/data/projects.js`.
+- Update skills and proficiency levels in `src/data/skills.js`.
+- Place static images and other public assets in `public/`.
+
+## Contact-form configuration
+
+The contact form is handled by `api/contact.js`. For email delivery, configure
+these environment variables in your local environment and deployment platform:
+
+```env
+EMAIL_USER=your-gmail-address@gmail.com
+EMAIL_PASS=your-gmail-app-password
+CONTACT_RECIPIENT=your-inbox@example.com
+```
+
+`EMAIL_PASS` should be a Gmail App Password, not your usual Gmail password.
+Never commit these values to source control.
+
+For a deployed site, also update `allowedOrigins` in `api/contact.js` with your
+production domain so that the form can make requests successfully.
+
+## Deploy
+
+This project is configured for Vercel. Import the repository into Vercel, add
+the contact-form environment variables, and deploy. The `vercel.json` rewrite
+keeps client-side routes working when a visitor refreshes the page.
+
+## License
+
+This project is intended as a personal portfolio template. Add a license file
+if you plan to distribute or reuse it publicly.
+
+## Future changes
+
+- Insert a video resume
+- embedded normal resume
+- change the meteors to neural network
+- add "more projects" under project section so that only 3 projects are shown 
+- On clicking "more projects another page gets open of "/MoreProjects"
+- under my skills, in "all" tab shown only important or major works rather than showing all at once.
+- Add "/MyJourney" page to show academics 
+
+### Build portfolio that can tell you are actual capable like 3-5 experiance
+
+1. One deployed AI system with real users 
+2. Add evaluations , guardrails , monitorings , loggings and cost/latency tracking.
+3. Write up what broke and how you fixed it.
+4. Use stacking postings actually cite: python , RAG , LangGraph/CrewAI , vector DBs , MCP , Docker , one Cloud

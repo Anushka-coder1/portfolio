@@ -1,4 +1,5 @@
 import { ArrowUp } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -6,12 +7,13 @@ export const Footer = () => {
       <p className="text-sm text-muted-foreground ">
         &copy; {new Date().getFullYear()} Anushka Verma. All rights reserved.
       </p>
-      <a
-        href="#hero"
+      <Link
+        to="/#hero"
         className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
+        aria-label="Back to top of home page"
       >
         <ArrowUp size={20} />
-      </a>
+      </Link>
     </footer>
   )
 }
